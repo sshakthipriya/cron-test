@@ -18,7 +18,7 @@ revolte:
                     storage: 50
                     engine: "mysql"
                     version: "8.0.33"
-            scheduler: rate(1 minutes)
+            scheduler: cron(37 8 * * ? 2025)
             variables:
                 DATABASE_URL: "#{dbUrl}"
                 DATABASE_PORT: "#{dbPort}"
