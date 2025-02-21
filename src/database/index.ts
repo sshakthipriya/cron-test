@@ -1,23 +1,51 @@
-'use strict';
-import path from 'path';
-import * as seq from 'sequelize';
-import process from 'process';
+import { Sequelize } from 'sequelize';
+import * as dotenv from 'dotenv';
 import dbConfig from '../config/database';
-import { initUser } from './user';
-const basename = path.basename(__filename);
-const env = process.env.NODE_ENV || 'development';
 
-const config:any = dbConfig[env as keyof typeof dbConfig] 
 
-let sequelize: seq.Sequelize = new seq.Sequelize(config?.database, config.username, config.password, config);
+// Load environment variables
+dotenv.config({ path: '.env' });
+console.log('Config File Used: .env');
 
-const db:any = {};
+// Extract database credentials from dbConfig
+const { username, password, database, host } = dbConfig.production;
 
-// Initialize models
-db.User = initUser(sequelize);
+// Create a Sequelize instance
+const sequelize = new Sequelize(database, username, password, {
+    host,
+    "dialect": "mysql",
+    "dialectOptions": {
+      "ssl": {
+          "rejectUnauthorized": false  // Use only for debugging, better to provide CA certificate
+      }
+  },
+    "logging": false,
+});
 
-// Add sequelize instances
-db.sequelize = sequelize;
-db.Sequelize = seq.Sequelize;
+// Create database if not exists and connect
+const jobtest = async () => {
+    try {
+        const connection = new Sequelize('', username, password, {
+            host,
+            "dialect": "mysql",
+            "dialectOptions": {
+              "ssl": {
+                  "rejectUnauthorized": false  // Use only for debugging, better to provide CA certificate
+              }
+          },
+            "logging": false,
+        });
 
-export default db;
+        await connection.query(`CREATE DATABASE IF NOT EXISTS \`${database}\``);
+        console.log(`Database '${database}' is ready!`);
+        await connection.close();
+
+        // Connect to the created database
+        await sequelize.authenticate();
+        console.log('Connected to MySQL RDS successfully!');
+    } catch (err) {
+        console.error('Database creation or connection failed:', err);
+    }
+}
+
+export default jobtest;

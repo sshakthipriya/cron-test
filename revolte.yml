@@ -20,7 +20,6 @@ revolte:
                     version: "8.0.33"
             scheduler: rate(1 minutes)
             variables:
-                BASE_URL: /api/v1
                 DATABASE_URL: "#{dbUrl}"
                 DATABASE_PORT: "#{dbPort}"
                 DATABASE_USERNAME: "#{dbUsername}"

@@ -7,10 +7,10 @@ console.log(`Config File Used : ${path}`)
 
 const dbConfig = {
     "production": {
-      "username": process.env.DATABASE_USERNAME,
-      "password": process.env.DATABASE_PASSWORD,
-      "database": process.env.DATABASE_NAME,
-      "host": process.env.DATABASE_URL,
+      "username": process.env.DATABASE_USERNAME || '',
+      "password": process.env.DATABASE_PASSWORD || '',
+      "database": process.env.DATABASE_NAME || 'testdb',
+      "host": process.env.DATABASE_URL || '',
       "dialect": "mysql",
       "dialectOptions": {
         "ssl": {

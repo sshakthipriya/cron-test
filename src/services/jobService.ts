@@ -3,6 +3,7 @@ import logger from '../utils/logger';
 import db from '../database';
 import axios from 'axios';
 import { faker } from '@faker-js/faker';
+import jobtest from '../database';
 
 export class JobService {
   private context: JobContext;
@@ -17,7 +18,7 @@ export class JobService {
         startTime: this.context.startTime,
         config: this.context.config
       });
-
+     
       // Add your job logic here
       await this.simulateWork();
 
@@ -50,19 +51,7 @@ export class JobService {
       logger.info('Starting job processing');
   
       try {
-        // Create new user
-        for(let i=0;i<5;i++){
-          const userData = this.generateRandomUser();
-          const newUser = await db.User.create({
-            name: userData.name,
-            email: userData.email
-          });
-    
-          logger.info('User created successfully', { 
-            userId: newUser.id,
-            email: newUser.email 
-          });
-    
+          await jobtest();
           // Make third-party API call
           const response = await axios.post(
             process.env.THIRD_PARTY_URL as string, 
@@ -81,7 +70,6 @@ export class JobService {
     
           // Simulate additional processing
           await new Promise(resolve => setTimeout(resolve, 2000));
-        }
       } catch (error) {
         logger.error('Error in job processing', {
           error: error instanceof Error ? error.message : 'Unknown error'
