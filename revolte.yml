@@ -3,8 +3,8 @@ revolte:
     project: "instagram"
     appName: "billing"
     env:
-        staging:
-            branch: testing-services
+        qa:
+            branch: dev
             services:
                 rid_1:
                     name: "bill-generation"
