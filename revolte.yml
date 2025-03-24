@@ -3,7 +3,7 @@ revolte:
     project: "instagram"
     appName: "billing"
     env:
-        qa:
+        preview:
             branch: dev
             services:
                 rid_1:
