@@ -1,7 +1,7 @@
 revolte:
     version: "1.0"
     project: "instagram"
-    appName: "billing"
+    appName: "invoice-service"
     env:
         preview:
             branch: dev
