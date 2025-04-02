@@ -12,12 +12,12 @@ revolte:
                     entryPoint: "src/index.ts"
                     specifications:
                         cpu: 2
-                        memory: 2
+                        memory: 2 
                         storage: 30
                     properties:
                         scheduler: rate(1 minutes)
                         variables:
-                            DATABASE_URL: "#{dbUrl}"
+                            DATABASE_URL: "#{dbUrl}" 
                             DATABASE_PORT: "#{dbPort}"
                             DATABASE_USERNAME: "#{dbUsername}"
                             DATABASE_PASSWORD: "#{dbPassword}"
