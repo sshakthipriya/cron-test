@@ -15,7 +15,7 @@ revolte:
                         memory: 2
                         storage: 30
                     properties:
-                        scheduler: rate(1 minutes)
+                        scheduler: rate(1 minutes)   
                         variables:
                             DATABASE_URL: "#{dbUrl}"   
                             DATABASE_PORT: "#{dbPort}"
