@@ -30,4 +30,4 @@ revolte:
                         cpu: 2
                         memory: 1 
                         storage: 50
-                        engine: "mysql"
+                        engine: "mysql"  
