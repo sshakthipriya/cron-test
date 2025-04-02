@@ -28,6 +28,6 @@ revolte:
                     type: "DATABASE"
                     specifications:
                         cpu: 2
-                        memory: 1
+                        memory: 1 
                         storage: 50
                         engine: "mysql"
