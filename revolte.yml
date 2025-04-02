@@ -9,7 +9,7 @@ revolte:
                 rid_1:
                     name: "bill-generation"
                     type: "CRON"
-                    entryPoint: "src/index.ts" 
+                    entryPoint: "src/index.ts"
                     specifications:
                         cpu: 2
                         memory: 2
