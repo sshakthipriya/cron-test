@@ -17,10 +17,10 @@ revolte:
                     properties:
                         scheduler: rate(1 minutes)
                         variables:
-                            DATABASE_URL: "#{dbUrl}"
-                            DATABASE_PORT: "#{dbPort}"
-                            DATABASE_USERNAME: "#{dbUsername}"
-                            DATABASE_PASSWORD: "#{dbPassword}"
+                            DATABASE_URL: "#{billDatabase.dbUrl}"
+                            DATABASE_PORT: "#{billDatabase.dbPort}"
+                            DATABASE_USERNAME: "#{billDatabase.dbUsername}"
+                            DATABASE_PASSWORD: "#{billDatabase.bPassword}"
                             DATABASE_NAME: users
                             THIRD_PARTY_URL: https://testtt.requestcatcher.com/
                 rid_2:
