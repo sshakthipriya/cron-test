@@ -1,6 +1,6 @@
 revolte:
     version: "1.0"
-    project: "instagram"
+    project: "optum"
     appName: "invoice-service"
     env:
         preview:

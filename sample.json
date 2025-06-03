@@ -1,0 +1,1033 @@
+{
+    "$metadata": {
+      "httpStatusCode": 200,
+      "requestId": "480a29e7-2248-48eb-951d-7c5324fa8efe",
+      "attempts": 1,
+      "totalRetryDelay": 0
+    },
+    "DimensionValueAttributes": [],
+    "GroupDefinitions": [
+      {
+        "Key": "environment",
+        "Type": "TAG"
+      },
+      {
+        "Key": "USAGE_TYPE",
+        "Type": "DIMENSION"
+      }
+    ],
+    "ResultsByTime": [
+      {
+        "Estimated": false,
+        "Groups": [
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000103191",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000121743",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-SpotUsage:t3.small"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.006336",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.96",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-USW2-AWS-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0964825824",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-USW2-AWS-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.0000037959",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0001897933",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=ramco",
+              "USW1-DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000189692",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=ramco",
+              "USW1-DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000190399",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=ramco",
+              "USW1-InstanceUsage:db.t3.micro"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "2.948606",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=ramco",
+              "USW1-RDS:GP2-Storage"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.0674853009",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.4890239196",
+                "Unit": "GB-Month"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000187569",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000189692",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-InstanceUsage:db.t3.micro"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.894999",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-RDS:GP2-Storage"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.0085770833",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0621527778",
+                "Unit": "GB-Month"
+              }
+            }
+          }
+        ],
+        "TimePeriod": {
+          "End": "2025-05-01",
+          "Start": "2025-04-30"
+        },
+        "Total": {}
+      },
+      {
+        "Estimated": true,
+        "Groups": [
+          {
+            "Keys": [
+              "environment$",
+              "RDS:ChargedBackupUsage"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.017245385",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.181530368",
+                "Unit": "GB-Month"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$",
+              "USW1-RDS:ChargedBackupUsage"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.386231932",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "4.0655992865",
+                "Unit": "GB-Month"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0008116698",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0010547313",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-SpotUsage:t3.small"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.053042782",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "8.110834",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-SpotUsage:t3.medium"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.053042782",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "9.110834",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-USW2-AWS-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.5790249228",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-USW2-AWS-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.0000204322",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0010216144",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=qa:b=qa",
+              "USW1-DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0001943541",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=qa:b=qa",
+              "USW1-DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0002297525",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=qa:b=qa",
+              "USW1-SpotUsage:t3.small"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.1150952508",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "17.683889",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=qa:b=qa",
+              "USW1-USW2-AWS-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.6727838927",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:e=:p=optum:a=message-service:e=qa:b=qa",
+              "USW1-USW2-AWS-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.0000244533",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0012226524",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:undefined=CRON:e=:p=instagram:a=invoice-service:e=preview:b=dev",
+              "USW1-DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000782777",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:undefined=CRON:e=:p=instagram:a=invoice-service:e=preview:b=dev",
+              "USW1-DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000367988",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:undefined=CRON:e=:p=instagram:a=invoice-service:e=preview:b=dev",
+              "USW1-SpotUsage:t3.small"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.0081792571",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "1.26889",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:undefined=CRON:e=:p=instagram:a=invoice-service:e=preview:b=dev",
+              "USW1-USW2-AWS-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.4933757959",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:e=:undefined=CRON:e=:p=instagram:a=invoice-service:e=preview:b=dev",
+              "USW1-USW2-AWS-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.0000130294",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0006514647",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=120569605035",
+              "DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000304356",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=120569605035",
+              "DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000305772",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=120569605035",
+              "InstanceUsage:db.t3.micro"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.027992543",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "1.599431",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=120569605035",
+              "RDS:GP2-Storage"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "2.6954799425",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "23.4389561015",
+                "Unit": "GB-Month"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=120569605035",
+              "USW1-DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0001081416",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=120569605035",
+              "USW1-DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0001086482",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=120569605035",
+              "USW1-InstanceUsage:db.t3.medium"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.060999756",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.666664",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=120569605035",
+              "USW1-InstanceUsage:db.t3.micro"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.163268458",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "7.167759",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=120569605035",
+              "USW1-RDS:GP2-Storage"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.3699423302",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "2.6807415174",
+                "Unit": "GB-Month"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=ramco",
+              "USW1-DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000431758",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=ramco",
+              "USW1-DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000433881",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=ramco",
+              "USW1-InstanceUsage:db.t3.micro"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.171677554",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "7.369157",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=ramco",
+              "USW1-RDS:GP2-Storage"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.350273411",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "2.538213113",
+                "Unit": "GB-Month"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:os=ramco",
+              "USW1-SpotUsage:t3.small"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.0003534993",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.056111",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=instagram:a=invoice-service:e=preview:b=dev",
+              "USW1-DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000834503",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=instagram:a=invoice-service:e=preview:b=dev",
+              "USW1-DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000845828",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=instagram:a=invoice-service:e=preview:b=dev",
+              "USW1-InstanceUsage:db.t3.micro"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.228372122",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "10.380551",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=instagram:a=invoice-service:e=preview:b=dev",
+              "USW1-RDS:GP2-Storage"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.0998495685",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.7235475958",
+                "Unit": "GB-Month"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.000083096",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000831668",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-InstanceUsage:db.t3.micro"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.183039936",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "7.626664",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=optum:a=message-service:e=preview:b=dev",
+              "USW1-RDS:GP2-Storage"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.0707311832",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.5125448031",
+                "Unit": "GB-Month"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=optum:a=message-service:e=qa:b=qa",
+              "USW1-DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.000102509",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=optum:a=message-service:e=qa:b=qa",
+              "USW1-DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0001028443",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=optum:a=message-service:e=qa:b=qa",
+              "USW1-InstanceUsage:db.t3.micro"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.317199912",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "13.216663",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:p=optum:a=message-service:e=qa:b=qa",
+              "USW1-RDS:GP2-Storage"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.1261264566",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.913959827",
+                "Unit": "GB-Month"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:undefined=p:undefined=r:undefined=e:undefined=v:undefined=i:undefined=e:undefined=w",
+              "USW1-DataTransfer-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000084164",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:undefined=p:undefined=r:undefined=e:undefined=v:undefined=i:undefined=e:undefined=w",
+              "USW1-DataTransfer-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0000057846",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:undefined=p:undefined=r:undefined=e:undefined=v:undefined=i:undefined=e:undefined=w",
+              "USW1-SpotUsage:t3.small"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.0067",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "1",
+                "Unit": "Hrs"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:undefined=p:undefined=r:undefined=e:undefined=v:undefined=i:undefined=e:undefined=w",
+              "USW1-USW2-AWS-In-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0958744986",
+                "Unit": "GB"
+              }
+            }
+          },
+          {
+            "Keys": [
+              "environment$:undefined=p:undefined=r:undefined=e:undefined=v:undefined=i:undefined=e:undefined=w",
+              "USW1-USW2-AWS-Out-Bytes"
+            ],
+            "Metrics": {
+              "UnblendedCost": {
+                "Amount": "0.000003049",
+                "Unit": "USD"
+              },
+              "UsageQuantity": {
+                "Amount": "0.0001524491",
+                "Unit": "GB"
+              }
+            }
+          }
+        ],
+        "TimePeriod": {
+          "End": "2025-05-30",
+          "Start": "2025-05-01"
+        },
+        "Total": {}
+      }
+    ]
+  }
