@@ -3,7 +3,7 @@ revolte:
     project: "optum"
     appName: "invoice-service"
     env:
-        preview:
+        production:
             branch: dev
             services:
                 rid_1:
