@@ -1,7 +1,7 @@
 revolte:
   version: '1.0'
   project: Untitled Project
-  appName: new-app
+  appName: app-name
   env:
     production:
       branch: main
@@ -72,7 +72,7 @@ revolte:
             memory: 2
             storage: 30
           properties:
-            scheduler: cron(0/2 * 11 6 ? 2025)
+            scheduler: cron(0/2 * 27 6 ? 2025)
             variables:
               BASE_URL: /api/v1
               DATABASE_URL: '#{db.dbUrl}'
