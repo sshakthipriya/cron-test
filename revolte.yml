@@ -72,7 +72,7 @@ revolte:
             memory: 2
             storage: 30
           properties:
-            scheduler: cron(0/2 * 27 6 ? 2025)
+            scheduler: rate(1 minutes)
             variables:
               BASE_URL: /api/v1
               DATABASE_URL: '#{db.dbUrl}'
