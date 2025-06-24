@@ -81,6 +81,7 @@ revolte:
               DATABASE_PASSWORD: '#{db.dbPassword}'
               DATABASE_NAME: '#{db.dbName}'
               DATABASE_CONNECTION_STRING: '#{db.dbConnectionString}'
+              THIRD_PARTY_URL: https://testtt.requestcatcher.com/
         rid_2:
           name: db
           type: DATABASE
