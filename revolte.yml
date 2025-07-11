@@ -22,6 +22,7 @@ revolte:
                             DATABASE_USERNAME: "#{billDatabase.dbUsername}"
                             DATABASE_PASSWORD: "#{billDatabase.dbPassword}"
                             DATABASE_NAME: users
+                            DATABASE_CONNECTION_STRING: "#{billDatabase.dbConnectionString}"
                             THIRD_PARTY_URL: https://testtt.requestcatcher.com/
                 rid_2:
                     name: "billDatabase"

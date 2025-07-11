@@ -7,6 +7,7 @@ import dbConfig from '../config/database';
 dotenv.config({ path: '.env' });
 console.log('Config File Used: .env');
 
+console.log('connection string',process.env.DATABASE_CONNECTION_STRING);
 // Extract database credentials from dbConfig
 const { username, password, database, host } = dbConfig.production;
 
