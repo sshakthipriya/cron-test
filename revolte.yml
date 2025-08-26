@@ -3,7 +3,7 @@ revolte:
     project:  "optum"
     appName: "python-service"
     env:
-        qa:
+        preview:
             branch: dev2
             services:
                 rid_1:
