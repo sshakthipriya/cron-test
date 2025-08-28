@@ -19,3 +19,4 @@ revolte:
                         port: 8080
                         variables:
                            BASE_URL: "/api/v1"
+                           PORT: 8080
