@@ -4,7 +4,7 @@ revolte:
   appName: django-service
   env:
     preview:     
-      branch: dev
+      branch: djnago-docker
       services:
         rid_1:
           name: "djangoService"
