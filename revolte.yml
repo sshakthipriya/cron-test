@@ -25,7 +25,6 @@ revolte:
               DATABASE_PASSWORD: "#{userDatabase.dbPassword}"
               DATABASE_NAME: "#{userDatabase.dbName}"
               DJANGO_SECRET_KEY: "changeme-please"
-              DJANGO_DEBUG: 1
         rid_2:
           name: "userDatabase"
           type: "DATABASE"
