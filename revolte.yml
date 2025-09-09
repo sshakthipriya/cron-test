@@ -7,6 +7,9 @@ revolte:
         summarize: true
         suggestFixes: false 
         commentStyle: "Concise"
+      codeStyle:
+        rules:
+          abstractClassInstantiated: "warn"
     env:
         preview:
             branch: dev2
