@@ -10,7 +10,7 @@ revolte:
       codeQuality:
         codeStyle:
             rules:
-            abstractClassInstantiated: "warn"
+             abstractClassInstantiated: "warn"
     env:
         preview:
             branch: dev2
