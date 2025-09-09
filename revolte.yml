@@ -14,6 +14,8 @@ revolte:
     env:
         preview:
             branch: dev2
+            codeReview: true
+            codeQuality: true
             services:
                 rid_1:
                     name: "web_service"
