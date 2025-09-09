@@ -2,6 +2,11 @@ revolte:
     version: "1.0"
     project:  "optum"
     appName: "python-service"
+    config:
+      codeReview:
+        summarize: true
+        suggestFixes: false 
+        commentStyle: "Concise"
     env:
         preview:
             branch: dev2
