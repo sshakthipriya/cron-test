@@ -2,9 +2,20 @@ revolte:
     version: "1.0"
     project:  "optum"
     appName: "python-service"
+    config:
+      codeReview:
+        summarize: true
+        suggestFixes: false 
+        commentStyle: "Concise"
+      codeQuality:
+        codeStyle:
+            rules:
+             abstractClassInstantiated: "warn"
     env:
-        production:
+        preview:
             branch: dev3
+            codeReview: true
+            codeQuality: true
             services:
                 rid_1:
                     name: "web_service"
@@ -18,23 +29,6 @@ revolte:
                             replica:
                                 min: 1
                                 max: 2
-                    properties:
-                        health: "/health"
-                        port: 8080
-                        variables:
-                           BASE_URL: "/api/v1"
-                           PORT: 8080
-        preview:
-            branch: dev3
-            services:
-                rid_1:
-                    name: "web_service"
-                    type: "WEB_SERVICE" 
-                    entryPoint: "app.py"
-                    specifications:
-                        cpu: 2
-                        memory: 2
-                        storage: 30
                     properties:
                         health: "/health"
                         port: 8080
