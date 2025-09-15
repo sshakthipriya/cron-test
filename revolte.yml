@@ -1,35 +1,28 @@
 revolte:
   version: "1.0"
-  project: optum
-  appName: django-service
+  project: "optum"
+  appName: "stream-service"
   env:
-    preview:     
-      branch: djnago-docker
-      services:
-        rid_1:
-          name: "djangoService"
-          type: "WEB_SERVICE"
-          entryPoint: "wsgi.py"
-          specifications:
-            cpu: 2
-            memory: 2
-            storage: 30
-          properties:
-            health: "/health"
-            port: 8080
-            variables:
-              BASE_URL: "/api/v1" 
-              DATABASE_HOST: "#{userDatabase.dbUrl}"
-              DB_PORT: "#{userDatabase.dbPort}"
-              DATABASE_USER: "#{userDatabase.dbUsername}"
-              DATABASE_PASSWORD: "#{userDatabase.dbPassword}"
-              DATABASE_NAME: "#{userDatabase.dbName}"
-              DJANGO_SECRET_KEY: "changeme-please"
-        rid_2:
-          name: "userDatabase"
-          type: "DATABASE"
-          specifications:
-            cpu: 2
-            memory: 1
-            storage: 50
-            engine: "postgres"
+   qa:
+    codeReview: false
+    codeQuality: false
+    branch: node-javascript
+    services:
+      rid_1:
+        name: "node-service"
+        type: "WEB_SERVICE"
+        entryPoint: "Program.cs"
+        specifications:
+              cpu: 2
+              memory: 2
+              storage: 30
+        properties:
+              health: "/health"
+              port: 8080
+              variables:
+                BASE_URL: "/api/v1"
+      rid_2:
+        name: "storage-service"
+        type: "STORAGE_BUCKET"
+        configurations:
+          bucketName: "sample-storage-service-bucket"
