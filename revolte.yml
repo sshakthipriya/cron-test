@@ -3,7 +3,7 @@ revolte:
   project: "optum"
   appName: "stream-service"
   env:
-   qa:
+   preview:
     codeReview: false
     codeQuality: false
     branch: node-javascript
